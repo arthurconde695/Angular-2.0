@@ -1,0 +1,12 @@
+<div class="header">
+    <h1>🐾 Silly Cats 🐾</h1>
+  </div>
+  
+  <div class="cat-gallery">
+    <div *ngFor="let cat of cats" class="cat-card">
+      <img [src]="cat.image" alt="{{ cat.name }}" />
+      <h2>{{ cat.name }}</h2>
+      <p>{{ cat.description }}</p>
+    </div>
+  </div>
+  
